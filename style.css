@@ -1,0 +1,122 @@
+
+/*Syntax for CSS
+
+Selector {
+	porperty : value;
+}
+
+*/
+
+/*in CSS we have SPECIFICITY RULE in Selector: 
+Higher Priority 
+(Id)
+(Class)
+(Element)
+
+Least Priority 
+(Universal)
+*/
+
+/*Universal Selector*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+/*make the scrolling of the page smooth*/
+html {
+	scroll-behavior: smooth;
+}
+
+/*Element Selector*/
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+	color: #007bff;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid blue;
+	border-radius: 20%;
+}
+
+/*Id Selector*/
+#landing {
+	/*vh - viewport height --> determined/measured percentage of the height of the device you are viewing your webpage in*/ 
+	height: 90vh;
+	/*flexible responsive layouts from left to right*/
+	/*flexbox --> it allows us to arrange/layout elements inside our landing section horizontally and vertically
+			by default, diplay : flex; arranges elements inside the parent element*/
+	display: flex;
+	/*flex-direction --> arranges flex items into a column*/
+	flex-direction: column;
+	/*justify-content:  center; --> arranges elements horizontally if the flex items are in a row, however, it arranges elements
+			vertically if the flex items are in a column*/
+	justify-content: center;
+	/*align-items:  center; --> arranges all flex items to be centered vertically*/
+	align-items: center;
+}
+
+#gallery {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+}
+
+/*Class Selector*/
+.tools {
+	/* border --> lines around the element
+	  #f2f2f2 --> hex code
+	  border : size type color;
+	*/
+	border: 5px solid #f2f2f2;
+	height: 200px;
+	width: 75%;
+	margin: 20px;
+	padding: 25px;
+}
+
+
+
+/*
+BOOTSTRAP SPACES (put inside the class): 
+m => margin
+p => padding
+
+t => top
+s => start/left
+e => end/right
+b => bottom
+
+mb => margin bottom
+
+x => x-axis
+y => y-axis
+
+1-5 spaces / auto
+
+mx-auto
+
+BOOTSTRAP COLORS: 
+ primary - blue
+ secondary - gray
+ warning - yellow
+ danger - red
+ info - light blue
+ success - green
+ light - white
+ transparent */
+
+  /*justify*/
+
